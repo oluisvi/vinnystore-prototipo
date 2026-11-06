@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Uma prévia de vitrine digital para a VinnyStore, com três caminhos de navegação para explorar moda masculina, calçados e acessórios.">
+  <link rel="canonical" href="https://oluisvi.github.io/vinnystore-prototipo/">
+  <meta name="robots" content="noindex, nofollow">
+  <title>VinnyStore — uma vitrine do seu jeito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="designs.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="tuning.css">
+  <link rel="stylesheet" href="motion.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="topline"><span>VINNYSTORE</span><span>UMA PRÉVIA DE VITRINE DIGITAL</span><span>SOROCABA · SP</span></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="VinnyStore, início"><span class="brand-mark">VINNY</span><span class="brand-sub">STORE</span></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="#inspiracoes">Inspirações</a><a href="#kits">Kits</a><a href="https://wa.me/c/5515996050317" target="_blank" rel="noopener noreferrer">Catálogo atual ↗</a></nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" id="searchToggle" aria-label="Abrir busca" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"></circle><path d="m16 16 4.1 4.1"></path></svg></button>
+      <button class="design-trigger" id="designTrigger" aria-haspopup="true" aria-expanded="false"><span class="trigger-label">Design</span><span id="activeDesignName">01 · Editorial</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m3 6 5 5 5-5"></path></svg></button>
+    </div>
+    <div class="design-menu" id="designMenu" hidden aria-label="Escolha uma estrutura visual">
+      <p class="menu-title">Escolha o caminho visual</p>
+      <button class="design-option" data-design="editorial"><span class="option-number">01</span><span><strong>Editorial</strong><small>Imagem e narrativa</small></span><span class="option-check" aria-hidden="true">✓</span></button>
+      <button class="design-option" data-design="storefront"><span class="option-number">02</span><span><strong>Loja direta</strong><small>Busca e categorias</small></span><span class="option-check" aria-hidden="true">✓</span></button>
+      <button class="design-option" data-design="lookbook"><span class="option-number">03</span><span><strong>Lookbook</strong><small>Campanha e combinações</small></span><span class="option-check" aria-hidden="true">✓</span></button>
+    </div>
+    <form class="search-panel" id="searchPanel" hidden role="search" method="get"><label for="catalogSearch">Buscar na vitrine</label><input id="catalogSearch" type="search" placeholder="Ex.: camiseta, moletom, kit" autocomplete="off"><button class="text-button" id="clearSearch" type="button">Limpar</button></form>
+  </header>
+  <main id="conteudo" tabindex="-1"><noscript><section style="max-width:900px;margin:80px auto;padding:32px"><h1>Estilo que segue com você.</h1><p>Esta prévia conceitual da VinnyStore usa uma vitrine interativa. Ative JavaScript para explorar as três estruturas de navegação.</p></section></noscript></main>
+  <footer class="site-footer" id="contato">
+    <div class="footer-main"><a class="brand brand-inverse" href="#inicio" aria-label="VinnyStore, início"><span class="brand-mark">VINNY</span><span class="brand-sub">STORE</span></a><p>Encontre seu estilo e consulte o catálogo atualizado.<br><span>A equipe da VinnyStore confirma tamanhos, valores e disponibilidade.</span></p><a class="footer-cta" href="https://wa.me/c/5515996050317" target="_blank" rel="noopener noreferrer">Abrir catálogo no WhatsApp <span aria-hidden="true">↗</span></a></div>
+    <div class="footer-note"><span>PRÉVIA CONCEITUAL · VINNYSTORE</span><p>Fotos e peças mostradas são referências visuais e não representam os modelos do catálogo da loja. Tamanhos, valores e disponibilidade devem ser confirmados com a equipe.</p></div>
+    <div class="footer-bottom"><span>Sorocaba · SP</span><span>Projeto de apresentação por Luiz</span></div>
+  </footer>
+  <div class="notice" id="prototypeNotice" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

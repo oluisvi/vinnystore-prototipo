@@ -1,0 +1,1 @@
+.hero-editorial{min-height:min(590px,calc(100svh - 120px))}.hero-editorial .hero-copy{transform:translateY(-34px)}.hero-editorial .hero-copy h1{font-size:clamp(56px,6.3vw,94px)}@media(max-width:680px){.hero-editorial{min-height:auto}.hero-editorial .hero-copy{transform:none}}
